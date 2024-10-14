@@ -263,6 +263,7 @@
     border-radius: 8px;
     color: black;
     font-weight: bold;
+    text-decoration: #333;
 }
 
 .editbtn:hover {

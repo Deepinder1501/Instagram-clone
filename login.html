@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="phone-preview">
+            <img src="pics/instagram[1].png" alt="Phone preview of Instagram app" />
+        </div>
+
+        <div class="login-box">
+            <div class="logo">
+                <img src="pics/spelling_insta[1].png" alt="Instagram Logo">
+            </div>
+            <form class="login-form" id="loginForm">
+                <input type="text" id="username" placeholder="Phone number, username, or email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Log in</button>
+                <div class="divider">
+                    <hr><span>OR</span><hr>
+                </div>
+                <button class="fb-login">
+                    <img src="pics/facebook[1].png" alt="Facebook Icon" class="fb-icon">
+                    Log in with Facebook
+                </button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </form>
+
+            <div class="signup-link">
+                Don't have an account? <a href="signup.html">Sign Up</a>
+            </div>
+
+            <div class="get-app">
+                <p>Get the app.</p>
+                <div class="app-buttons">
+                    <img id="google" src="pics/google_play[1].png" alt="Get it on Google Play">
+                    <img id="microsoft" src="pics/microsoft[1].png" alt="Get it from Microsoft">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+        </ul>
+        <p>&copy; 2024 Instagram from Meta</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Signup box styling */
+.signup-box {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #dbdbdb;
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.logo img {
+    max-width: 175px;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 17px;
+    color: #8e8e8e;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Facebook login button */
+.fb-signup {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fb-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.divider hr {
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    width: 40%;
+}
+
+.divider span {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+    outline: none;
+}
+
+form input:focus {
+    border-color: #a8a8a8;
+}
+
+form button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #007bc7;
+}
+
+/* Terms and Info */
+.terms-info, .terms {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: 10px;
+    line-height: 18px;
+}
+
+.terms-info a, .terms a {
+    color: #00376b;
+    text-decoration: none;
+}
+
+/* Login Link */
+.login-link {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.login-link p {
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* App section */
+.app-section {
+    margin-top: 20px;
+}
+
+.app-section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.app-buttons img {
+    width: 135px;
+    margin: 2px;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #00376b;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+#microsoft {
+    height: 35px;
+    margin-bottom: 13px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    .signup-box {
+        padding: 20px;
+        max-width: 300px;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    .tagline {
+        font-size: 15px;
+    }
+
+    form input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    form button {
+        font-size: 13px;
+    }
+
+    .fb-signup {
+        font-size: 13px;
+    }
+
+    .app-buttons img {
+        width: 120px;
+    }
+}
+
+/* Mobile devices (phones) */
+@media screen and (max-width: 480px) {
+    .signup-box {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    form input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    form button {
+        font-size: 12px;
+    }
+
+    .fb-signup {
+        font-size: 12px;
+    }
+
+    .app-buttons img {
+        width: 110px;
+    }
+
+    footer ul li {
+        margin-right: 5px;
+    }
+}

@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+}
+
+/* Left Panel Styles */
+.left-panel {
+    width: 250px;
+    background-color: #ffffff;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #dbdbdb;
+    padding-top: 20px;
+}
+
+.side-nav {
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo-img {
+    width: 150px;
+}
+
+.logo-icon {
+    display: none;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-bottom: 20px;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.nav-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.nav-links p {
+    margin: 0;
+}
+
+/* Active State */
+.active {
+    width: 4px;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+}
+
+/* Drop-Up Menu Styles */
+.more-option {
+    position: relative;
+}
+
+.drop-up-options {
+    display: none;
+    list-style: none;
+    background: #ffffff;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+.drop-up-options li {
+    margin-bottom: 10px;
+}
+
+.drop-up-options li:last-child {
+    margin-bottom: 0;
+}
+
+.drop-up-options a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.show-drop-up {
+    display: block;
+}
+
+/* Right Panel Styles */
+.right-panel {
+    margin-left: 250px;
+    padding: 30px;
+    width: calc(100% - 250px);
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* Edit Profile Form Styles */
+.edit-profile-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.username {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+/* Save Button */
+.save-btn {
+    background-color: #3897f0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #3185d6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .left-panel {
+        width: 60px;
+    }
+
+    .right-panel {
+        margin-left: 60px;
+        width: calc(100% - 60px);
+    }
+
+    .logo-img {
+        display: none;
+    }
+
+    .logo-icon {
+        display: inline-block;
+        width: 40px;
+    }
+
+    .nav-links li a {
+        flex-direction: column;
+    }
+
+    .nav-links p {
+        font-size: 12px;
+    }
+
+    .edit-profile-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .right-panel {
+        padding: 20px;
+    }
+
+    .form-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 10px;
+    }
+}

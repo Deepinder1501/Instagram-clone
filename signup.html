@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone - Sign Up</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Signup Box -->
+        <div class="signup-box">
+            <div class="logo">
+                <img src="pics/spelling_insta[1].png" alt="">
+            </div>
+            <p class="tagline">Sign up to see photos and videos from your friends.</p>
+
+            <button class="fb-signup"> 
+                <img src="pics/facebook[1].png" alt="Facebook Icon" class="fb-icon"> 
+                Log in With Facebook
+            </button>
+
+            <div class="divider">
+                <hr>
+                <span>OR</span>
+                <hr>
+            </div>
+
+            <form id="signup-form" action="login.html">
+                <input type="email" placeholder="Mobile Number or Email" id="email" required>
+                <input type="text" placeholder="Full Name" id="fullname" required>
+                <input type="text" placeholder="Username" id="username" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <button type="submit">Sign up</button>
+            </form>
+
+            <p class="terms-info">
+                People who use our service may have uploaded your contact information to Instagram. 
+                <a href="#">Learn More</a>
+            </p>
+
+            <p class="terms">
+                By signing up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> 
+                and <a href="#">Cookies Policy</a>.
+            </p>
+        </div>
+
+        <!-- Already have account -->
+        <div class="login-link">
+            <p>Have an account? <a href="login.html">Log in</a></p>
+        </div>
+
+        <!-- Get the app section -->
+        <div class="app-section">
+            <p>Get the app.</p>
+            <div class="app-buttons">
+                <img id="google_play"  src="pics/google_play[1].png" alt="Get it on Google Play">
+                <img id="microsoft" src="pics/microsoft[1].png" alt="Get it from Microsoft">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+        </ul>
+        <p>&copy; 2024 Instagram from Meta</p>
+    </footer>
+
+    <script src="signup.js"></script>
+</body>
+</html>
